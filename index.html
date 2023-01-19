@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Register</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/Login Screens/001/css/main.css">
+    <link rel="stylesheet" href="/Login Screens/001/css/reset.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- JS -->
+    <script src="/Login Screens/001/js/main.js" defer></script>
+</head>
+<body>
+    
+    <main>
+        <section class="login">
+            <header>
+                <h3>Let's Sing in</h3>
+            </header>
+            <div class="register">
+                <span><a onclick="registerScreen()" href="#">Register</a></span>
+            </div>
+            <form>
+                <div class="field-user">
+                    <input type="text" required>
+                    <span>login</span>
+                    <i class="field-line"></i>
+                </div>
+                <div class="field-pass">
+                    <input id="field-pass" type="password" required>
+                    <span>password</span>
+                    <i class="field-line"></i>
+                    <i onclick="passView()" class="fa-regular fa-eye"></i>
+                    <i onclick="passHide()" class="fa-regular fa-eye-slash"></i>
+                </div>
+                <div class="field-pass-request">
+                    <p>Forgot the password? <a href="#">Click here</a></p>
+                </div>
+                <button>login</button>
+            </form>
+        </section>
+
+        <section id="register" class="login">
+            <header>
+                <h3>Let's Sign up</h3>
+            </header>
+            <div class="register">
+                <span><a onclick="loginScreen()" href="#">Login</a></span>
+            </div>
+            <form>
+                <div class="field-user">
+                    <input type="text" required>
+                    <span>Name</span>
+                    <i class="field-line"></i>
+                </div>
+                <div class="field-user">
+                    <input type="text" required>
+                    <span>Email</span>
+                    <i class="field-line"></i>
+                </div>
+                <div class="field-user">
+                    <input type="text" required>
+                    <span>Username</span>
+                    <i class="field-line"></i>
+                </div>
+                <div class="field-user">
+                    <input type="text" required>
+                    <span>Phone number</span>
+                    <i class="field-line"></i>
+                </div>
+                <div class="field-pass">
+                    <input id="field-pass" type="password" required>
+                    <span>Password</span>
+                    <i class="field-line"></i>
+                    <i onclick="passView()" class="fa-regular fa-eye"></i>
+                    <i onclick="passHide()" class="fa-regular fa-eye-slash"></i>
+                </div>
+                <button>Sign up</button>
+            </form>
+        </section>
+        
+    </main>
+
+</body>
+</html>
